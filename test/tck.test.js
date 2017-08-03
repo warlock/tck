@@ -1,6 +1,6 @@
 /*global describe it*/
 var chai = require('chai');
-var tck = require('../type.js');
+var tck = require('../tck.js');
 
 describe('Type', function () {
   var data = {

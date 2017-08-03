@@ -2,7 +2,7 @@
   "name": "tck",
   "version": "1.0.0",
   "description": "Data Type Checker",
-  "main": "type.js",
+  "main": "tck.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
     "build": "./node_modules/webpack/bin/webpack.js -p",
