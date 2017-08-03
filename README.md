@@ -21,7 +21,7 @@ const tck = require("tck")
 ```
 
 ## Methods:
-```
+```js
 tck.isFunction()
 tck.isArray()
 tck.isObject()
