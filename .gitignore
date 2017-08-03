@@ -4,3 +4,4 @@ npm-debug.log
 build
 .DS_Store
 test.js
+coverage
