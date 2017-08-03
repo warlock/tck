@@ -1,0 +1,52 @@
+{
+  "name": "tck",
+  "version": "1.0.0",
+  "description": "Data Type Checker",
+  "main": "type.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "build": "./node_modules/webpack/bin/webpack.js -p",
+    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warlock/tck.git"
+  },
+  "keywords": [
+    "flow",
+    "performance",
+    "javascript",
+    "array",
+    "functional",
+    "then",
+    "chain",
+    "event",
+    "modules",
+    "async",
+    "each",
+    "promise",
+    "waterfall",
+    "await",
+    "iterator",
+    "tools",
+    "utils"
+  ],
+  "author": "Josep Subils Rigau <js@js.gl> (http://js.gl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/warlock/tck/issues"
+  },
+  "homepage": "http://js.gl",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "coveralls": "^2.13.1",
+    "eslint": "^4.3.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "mocha-eslint": "^4.0.0",
+    "mocha-jshint": "^2.3.1",
+    "webpack": "^3.4.1",
+    "snc": "*"
+  }
+}
