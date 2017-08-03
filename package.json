@@ -1,6 +1,6 @@
 {
   "name": "tck",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Data Type Checker",
   "main": "tck.js",
   "scripts": {
