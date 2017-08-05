@@ -5,6 +5,9 @@ var tck = require('../tck.js');
 describe('Type', function () {
   var data = {
     "func": function () {
+      return true;
+    },
+    "func_no_ret": function () {
       //do nothing
     },
     "num": 1.2,
@@ -23,6 +26,7 @@ describe('Type', function () {
     it('Check is function', function () {
       for (var key in data) {
         if (key === 'func') chai.assert.isTrue(tck.isFunction(data[key]));
+        else if (key === 'func_no_ret') chai.assert.isTrue(tck.isFunction(data[key]));
         else chai.assert.isNotTrue(tck.isFunction(data[key]));
       }
     });
@@ -88,10 +92,10 @@ describe('Type', function () {
   describe('tck.isEmpty()', function () {
     it('Check is empty', function () {
       for (var key in data) {
-        if (key === 'null') chai.assert.isTrue(tck.isEmpty(data[key]), "is null");
-        else if (key === 'undefined') chai.assert.isTrue(tck.isEmpty(data[key]), "is undefined");
-        else if (key === 'emptstr') chai.assert.isTrue(tck.isEmpty(data[key]), "is undefined");
-        else chai.assert.isNotTrue(tck.isEmpty(data[key]), "not is true" + key);
+        if (key === 'null') chai.assert.isTrue(tck.isEmpty(data[key]), "null is empty");
+        else if (key === 'undefined') chai.assert.isTrue(tck.isEmpty(data[key]), "undefined is empty");
+        else if (key === 'emptstr') chai.assert.isTrue(tck.isEmpty(data[key]), "empty string is empty");
+        else chai.assert.isNotTrue(tck.isEmpty(data[key]), "This is empty: " + key);
       }
     });
   });

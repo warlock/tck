@@ -1,4 +1,4 @@
-module.exports = {
+var tck = {
   'isFunction': function (fn) {
     return typeof fn === 'function';
   },
@@ -12,7 +12,7 @@ module.exports = {
     return typeof obj === "number" || obj instanceof Number;
   },
   'isInteger': function (obj) {
-    if (this.isNumber(obj)) return obj % 1 === 0;
+    if (tck.isNumber(obj)) return obj % 1 === 0;
     else return false;
   },
   'isString': function (obj ) {
@@ -22,7 +22,7 @@ module.exports = {
     return typeof obj === "boolean";
   },
   'isEmpty': function (data) {
-    return (data === null || data === "" || data === undefined);
+    return (undefined === data || data === null || data === "");
   },
   'isNull': function (data) {
     return data === null;
@@ -34,3 +34,5 @@ module.exports = {
     return data === undefined;
   }
 };
+
+module.exports = tck;
