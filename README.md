@@ -17,7 +17,7 @@ const tck = require("tck")
 ```
 ## Browser import:
 ```html
-<script src="spellbook/spellbook.js"></script>
+<script src="tck.js"></script>
 ```
 
 ## Methods:
