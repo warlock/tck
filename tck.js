@@ -87,6 +87,14 @@ var tck = {
    */
   'isUndefined': function (data) {
     return undefined === data;
+  },
+
+  /**
+   * @param {Any} data : Data for evaluation.
+   * @returns {Boolean} : Returns true when data is set
+   */
+  'isSet': function (data) {
+    return !tck.isEmpty(data);
   }
 };
 

@@ -126,4 +126,15 @@ describe('Type', function () {
       }
     });
   });
+
+  describe('tck.isSet()', function () {
+    it('Check is set', function () {
+      for (var key in data) {
+        if (key === 'null') chai.assert.isNotTrue(tck.isSet(data[key]), "null is not set value");
+        else if (key === 'undefined') chai.assert.isNotTrue(tck.isSet(data[key]), "undefined is not set value");
+        else if (key === 'emptstr') chai.assert.isNotTrue(tck.isSet(data[key]), "empty string is not set value");
+        else chai.assert.isTrue(tck.isSet(data[key]), "This is empty: " + key);
+      }
+    });
+  });
 });
