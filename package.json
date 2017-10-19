@@ -1,7 +1,7 @@
 {
   "name": "tck",
-  "version": "1.0.6",
-  "description": "Data Type Checker",
+  "version": "1.0.7",
+  "description": "JavaScript library for check types",
   "main": "tck.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",

@@ -1,6 +1,6 @@
 tck
 ===
-> Data type checker
+> JavaScript library for check types
 
 [![npm version](https://badge.fury.io/js/tck.svg)](https://badge.fury.io/js/tck) [![Coverage Status](https://coveralls.io/repos/github/warlock/tck/badge.svg?branch=master)](https://coveralls.io/github/warlock/tck?branch=master) [![GitHub version](https://badge.fury.io/gh/warlock%2Ftck.svg)](https://badge.fury.io/gh/warlock%2Ftck)
 
