@@ -36,6 +36,36 @@ tck.isNaN()
 tck.isUndefined()
 ```
 
+## Get method:
+```js
+const a = {
+  a: { b: ['c', 'd'] }
+}
+const res = tck.get(a, "a.b.1")
+console.log(res)
+```
+
+```
+-> 'd'
+```
+
+## Alias:
+```js
+tck.f = tck.isFunction;
+tck.a = tck.isArray;
+tck.o = tck.isObject;
+tck.n = tck.isNumber;
+tck.i = tck.isInteger;
+tck.s = tck.isString;
+tck.b = tck.isBoolean;
+tck.e = tck.isEmpty;
+tck.null = tck.isNull;
+tck.nan = tck.isNaN;
+tck.u = tck.isUndefined;
+tck.set = tck.isSet;
+tck.g = tck.get;
+```
+
 ### License
 All the code here is under MIT license. Which means you could do virtually anything with the code. I will appreciate it very much if you keep an attribution where appropriate.
 
