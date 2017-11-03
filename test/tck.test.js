@@ -4,22 +4,22 @@ var tck = require('../tck.js');
 
 describe('Type', function () {
   var data = {
-    "func": function () {
+    func: function () {
       return true;
     },
-    "func_no_ret": function () {
+    'func_no_ret': function () {
       //do nothing
     },
-    "num": 1.2,
-    "int": 1,
-    "string": 'hi',
-    "obj": {"a": 'b'},
-    "bool": true,
-    "array": [1,2,3],
-    "null": null,
-    "undefined": undefined,
-    "emptarr": [],
-    "emptstr": ""
+    num: 1.2,
+    int: 1,
+    string: 'hi',
+    obj: {a: 'b'},
+    bool: true,
+    array: [1,2,3],
+    null: null,
+    undefined: undefined,
+    emptarr: [],
+    emptstr: ''
   };
 
   describe('tck.isFunction()', function () {
@@ -135,6 +135,25 @@ describe('Type', function () {
         else if (key === 'emptstr') chai.assert.isNotTrue(tck.isSet(data[key]), "empty string is not set value");
         else chai.assert.isTrue(tck.isSet(data[key]), "This is empty: " + key);
       }
+    });
+  });
+
+  describe('tck.get()', function () {
+    var a = {a: {b: ['c', 'd']}};
+    it('Check get a string', function () {
+      chai.assert.isString(tck.get(a, "a.b.0"));
+    });
+
+    it('Check get "c" string', function () {
+      chai.assert.equal(tck.get(a, "a.b.0"), "c");
+    });
+
+    it('Check get a array', function () {
+      chai.assert.isArray(tck.get(a, "a.b"));
+    });
+
+    it('Check get a object', function () {
+      chai.assert.isObject(tck.get(a, "a"));
     });
   });
 });
