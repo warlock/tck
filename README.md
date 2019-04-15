@@ -2,7 +2,7 @@ tck
 ===
 > JavaScript library for check types
 
-[![npm version](https://badge.fury.io/js/tck.svg)](https://badge.fury.io/js/tck) [![Coverage Status](https://coveralls.io/repos/github/warlock/tck/badge.svg?branch=master)](https://coveralls.io/github/warlock/tck?branch=master) [![GitHub version](https://badge.fury.io/gh/warlock%2Ftck.svg)](https://badge.fury.io/gh/warlock%2Ftck)
+[![npm version](https://badge.fury.io/js/tck.svg)](https://badge.fury.io/js/tck) [![Coverage Status](https://coveralls.io/repos/github/warlock/tck/badge.svg?branch=master)](https://coveralls.io/github/warlock/tck?branch=master) [![GitHub version](https://badge.fury.io/gh/warlock%2Ftck.svg)](https://badge.fury.io/gh/warlock%2Ftck)[![Build Status](https://travis-ci.org/warlock/tck.svg?branch=master)](https://travis-ci.org/warlock/tck)
 
 ## INSTALL/DOWNLOAD
 http://npmjs.com/package/tck
